@@ -18,6 +18,7 @@ public class FamilleActe {
     String codeFa;
     String libelle;
     String description;
+    //many to many
     @OneToMany(mappedBy = "familleActe",cascade = CascadeType.ALL)
 List<Acte> actes;
 }
